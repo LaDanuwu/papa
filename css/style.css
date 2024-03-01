@@ -1,0 +1,131 @@
+.cont-padre{
+    width: 1000px;
+    height: 1000px;
+    background:aquamarine;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    animation: pulse 10s infinite;
+    transition: 1s;
+}
+
+@keyframes pulse {
+    0% {
+        background: url(../medios/images/rio.jpg);
+        background-size: cover;
+    }
+
+    50% {
+        background: url(../medios/images/cascada.jpg);
+        background-size: cover;
+      }
+    
+    100% {
+        background: url(../medios/images/cascada\ 2.jpg);
+        background-size: cover;
+    }
+    
+}
+
+.cont-padre:hover .oreja-izquierda, .cont-padre:hover .oreja-derecha{
+    transform: scale(1.5);
+}
+.cont-padre:hover .pie-derecho, .cont-padre:hover .pie-izquierdo{
+    transform: rotate(360deg);
+}
+.cont-padre:hover .bigote{
+    transform: scale(2);
+}
+
+.papa{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 250px;
+    z-index: 3;
+}
+
+.oreja-izquierda{
+    position: absolute;
+    top: 280px;
+    left: 310px;
+    z-index: 2;
+    transition: .5s;
+}
+
+.oreja-derecha{
+    position: absolute;
+    top: 280px;
+    right: 310px;
+    z-index: 2;
+    transition: .5s;
+}
+.sombrero{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 160px;
+    z-index: 4;
+    transition: 1s;
+}
+.sombrero:hover{
+    transform: translateY(-60px) rotate(360deg);
+}
+.ojo-izquierdo{
+    position: absolute;
+    left: 420px;
+    top: 300px;     
+    z-index: 4;
+    transition: .5s;
+}
+.ojo-derecho{
+    position: absolute;
+    right: 420px;
+    top: 300px;
+    z-index: 4;
+    transition: .5s;
+}
+.nariz{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 360px;
+    z-index: 4;
+    transition: 1s;
+}
+.nariz:hover{
+    transform: rotate(360deg);
+}
+.bigote{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 490px;
+    z-index: 3;
+    transition: .5s;
+}
+.pie-izquierdo{
+    position: absolute;
+    left: 350px;
+    top: 580px;
+    z-index: 2;
+    transition: .5s;
+}
+.pie-izquierdo:hover{
+    bottom: 200px;
+}
+.pie-derecho{
+    position: absolute;
+    right: 350px;
+    top: 580px;
+    z-index: 2;
+    transition: .5s;
+}
+.pie-derecho:hover{
+    bottom: 200px;
+}
+
